@@ -19,3 +19,14 @@ function powerCalculator(n, x) {
     return n * powerCalculator(n, (x - 1))
 }
 
+function reverseString(str) {
+    //base
+    if (str === '') {
+        return '';
+    }
+
+    // General case
+    const newChar = str[0];
+    return reverseString(str.slice(1)) + newChar;
+
+}
