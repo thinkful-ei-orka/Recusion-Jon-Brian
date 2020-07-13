@@ -1,7 +1,7 @@
 function countingSheep(sheep) {
     // Base case
     if (sheep === 0) {
-	console.log('All sheep jumped over the fence')
+        console.log('All sheep jumped over the fence')
         return;
     }
 
@@ -9,8 +9,6 @@ function countingSheep(sheep) {
     console.log(`${sheep}: Another sheep jumps over the fence`);
     countingSheep(sheep - 1);
 };
-
-countingSheep(3);
 
 function powerCalculator(n, x) {
     if (x == 1) {
@@ -35,6 +33,5 @@ function triangluarNumber(n) {
     if (n == 1) {
         return 1
     }
-    return  n + triangluarNumber(n - 1)
+    return n + triangluarNumber(n - 1)
 }
-
