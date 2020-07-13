@@ -94,3 +94,34 @@ function factorial(num) {
 };
 
 factorial(5);
+
+function maze() {
+
+}
+
+function mazeAll() {
+
+}
+
+function anagrams() {
+
+}
+
+function orgChart() {
+
+}
+
+function binaryRep(n) {
+    if (n < 0) {
+        throw new Error('No negative numbers')
+    }
+    if (n === 0) {
+        return '0'
+    }
+    if (n === 1) {
+        return '1'
+    }
+    const lsb = n % 2
+    const otherBits = Math.floor(n / 2)
+    return binaryRep(otherBits) + String(lsb)
+}
