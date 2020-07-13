@@ -43,13 +43,13 @@ function stringSplitter(str, separator) {
     }
 
     const char = str.charAt(0);
-    if (char === !separator){
+    if (char === !separator) {
         newVar = stringSplitter(str.slice(1), separator)
         newVar[0] = char + newVar[0]
-        
+
         return newVar;
-        
-    } 
+
+    }
 
     if (char === separator) {
         withSep = stringSplitter(str.slice(1), separator)
@@ -58,8 +58,27 @@ function stringSplitter(str, separator) {
         return withSep;
     }
 
-    
+
 
 
     stringSplitter('02/20/2020')
 }
+
+function fibonacci(n) {
+    if (n === 0) {
+        return 0
+    } else if (n === 1) {
+        return 1
+    }
+
+    const fib1 = fibonacci(n - 1)
+    const fib2 = fibonacci(n - 2)
+    return fib1 + fib2
+}
+
+function fibonacciSequence(n) {
+    for (let i = 1; i <= n; i++) {
+        console.log(fibonacci(i))
+    }
+}
+
