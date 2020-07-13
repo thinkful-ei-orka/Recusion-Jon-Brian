@@ -11,3 +11,11 @@ function countingSheep(sheep) {
 };
 
 countingSheep(3);
+
+function powerCalculator(n, x) {
+    if (x == 1) {
+        return n
+    }
+    return n * powerCalculator(n, (x - 1))
+}
+
