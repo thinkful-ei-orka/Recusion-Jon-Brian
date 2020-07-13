@@ -82,3 +82,15 @@ function fibonacciSequence(n) {
     }
 }
 
+function factorial(num) {
+    // Base case
+    if (num === 0) {
+        return 1;
+    }
+
+    // General case
+    console.log(num);
+    return num * factorial(num - 1);
+};
+
+factorial(5);
