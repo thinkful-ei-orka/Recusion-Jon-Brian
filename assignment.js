@@ -35,3 +35,31 @@ function triangluarNumber(n) {
     }
     return n + triangluarNumber(n - 1)
 }
+
+function stringSplitter(str, separator) {
+    //base
+    if (str === '') {
+        return [''];
+    }
+
+    const char = str.charAt(0);
+    if (char === !separator){
+        newVar = stringSplitter(str.slice(1), separator)
+        newVar[0] = char + newVar[0]
+        
+        return newVar;
+        
+    } 
+
+    if (char === separator) {
+        withSep = stringSplitter(str.slice(1), separator)
+        withSep = ['', ...withSep]
+
+        return withSep;
+    }
+
+    
+
+
+    stringSplitter('02/20/2020')
+}
