@@ -30,3 +30,11 @@ function reverseString(str) {
     return reverseString(str.slice(1)) + newChar;
 
 }
+
+function triangluarNumber(n) {
+    if (n == 1) {
+        return 1
+    }
+    return  n + triangluarNumber(n - 1)
+}
+
